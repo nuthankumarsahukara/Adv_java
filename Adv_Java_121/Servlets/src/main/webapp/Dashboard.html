@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Portal</title>
+</head>
+<body>
+	<div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 30px;">
+		<h1>Employee Application</h1>
+		<div style="margin-right:50px;">
+		<button onclick="window.location='List'">All Employee List</button>
+		<button onclick="window.location='Logout'">Logout</button>
+		</div>
+	</div>
+	<form action="addEmp" method="post" enctype="multipart/form-data">
+		ID : <input type="tel" pattern="[0-9]{3}" name="emp_id"/> <br/><br/>
+		Name :<input type="text" name="emp_name"/><br/><br/>
+		DOJ : <input type="date" name="emp_doj"/> <br/><br/>
+		Salary :<input type="tel" pattern="[0-9]{4-6}" name="emp_sal"/><br/><br/>
+		Department :
+		<select name="emp_dept">
+			<option>Salesman</option>
+			<option>Marketing</option>
+			<option>HR</option>
+			<option>Clerk</option>
+		</select><br/><br/>
+		Gender :
+		<input type="radio" name="emp_gender" value="Male"/> Male
+		<input type="radio" name="emp_gender" value="Female"/> Female <br/><br/>
+		Address :
+		<input type="text" name="emp_address" /> <br/><br/>
+		Photo :
+		<input type="file" name="emp_photo" /> <br/><br/>
+		<input type="submit"/>
+	</form>
+</body>
+</html>

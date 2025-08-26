@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+<bean id="courseBean" class="com.spring.Course" >
+	<property name="course_id" value="105" />
+	<property name="course_name" value="PowerBI" />
+	<property name="course_fee" value="18000" />
+	<property name="course_duration" value="4" />
+</bean>
+<bean class="com.spring.Student" id="studentBean">
+	<property name="std_id" value="1005" />
+	<property name="std_name" value="Vinod Kumar" />
+	<property name="course" ref="courseBean"/>
+</bean>
+           
+</beans>

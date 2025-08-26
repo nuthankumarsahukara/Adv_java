@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<style>
+	body{
+		display :flex;
+		justify-content: center;
+		align-items: center;
+		height : 90vh;
+		background-color:lightblue;
+	}
+	form{
+		background-color:lightyellow;
+		padding:15px;
+		box-shadow:3px 3px 8px black,-3px -3px 8px black;
+		border-radius:15px;	
+	}
+</style>
+</head>
+<body>
+	<form action="Register" method="post">
+		<h1 align="center">Register Form</h1>
+		Name :<input type="text" name="name"/> <br/> <br/>
+		Email :<input type="email" name="email"/> <br/> <br/>
+		DOB :<input type="date" name="dob" /> <br/> <br/>
+		Phone Number :<input type="tel" pattern="[0-9]{10}" name="phone" /><br/><br/>
+		Password :<input type="password" name="password"/> <br/> <br/>
+		<input type="submit" />
+	</form>
+</body>
+</html>

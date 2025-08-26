@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Students Details</h1>
+	<form action="AddStudent" method="post" enctype="multipart/form-data">
+		Student ID :<input type="tel" pattern="[0-9]{5}" name="std_id"/><br/><br/>
+		Student Name :<input type="text" name="std_name"/><br/><br/>
+		Student Email :<input type="email" name="std_email"/><br/><br/>
+		Student DOB :<input type="date" name="std_dob"/><br/><br/>
+		Student Gender :
+		<input type="radio" name="std_gender" value="Male"/>Male
+		<input type="radio" name="std_gender" value="Female"/>Female<br/><br/>
+		Student Course :
+		<input type="checkbox" name="std_course" value="Java Full Stack"/>Java Full Stack
+		<input type="checkbox" name="std_course" value="Python Full Stack"/>Python Full Stack
+		<input type="checkbox" name="std_course" value="Power BI"/>Power BI
+		<input type="checkbox" name="std_course" value="AI"/>AI
+		<input type="checkbox" name="std_course" value="MS Office"/>MS Office <br/><br/>
+		Student Phone Number :<input type="tel" pattern="[0-9]{10}" name="std_phone"/><br/><br/>
+		Student Photo :<input type="file" name="std_photo" /><br/><br/>
+	<input type="submit" />
+	</form>
+</body>
+</html>

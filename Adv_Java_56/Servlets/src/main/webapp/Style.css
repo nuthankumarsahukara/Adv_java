@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image:url('https://png.pngtree.com/thumb_back/fh260/background/20240703/pngtree-free-download-edit-pictures-hq-image-stock-photos-on-wallpaper-safari-image_15934736.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+form{
+	background-color:rgba(256,256,256,0.5);
+	border-radius:15px;
+	padding:20px;
+}
+
+h1{
+	text-align:center;
+}

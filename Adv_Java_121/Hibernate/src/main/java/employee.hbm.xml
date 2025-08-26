@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.datapro.Employee" table="java121h">
+		<id name="emp_id" column="emp_id" type="int"></id>
+		<property name="emp_name" column="emp_name" type="string" length="20"></property>
+		<property name="emp_dob" column="emp_dob" type="date"></property>
+		<property name="emp_salary" column="emp_salary" type="int"></property>
+		<property name="emp_gender" column="emp_gender" type="string" length="8"></property>
+		<property name="emp_dept" column="emp_dept" type="string" length="15"></property>	
+	</class>
+
+</hibernate-mapping>
